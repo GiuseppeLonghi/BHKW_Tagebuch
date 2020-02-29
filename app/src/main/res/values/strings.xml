@@ -1,0 +1,157 @@
+<resources>
+    <string name="app_name">Rome Tour Guide</string>
+    <string name="items">Hotels</string>
+    <string name="restaurants">Restaurants</string>
+    <string name="monuments">Monuments</string>
+    <string name="events">Events</string>
+
+    <!-- Toolbar titles when navigation menu item is selected -->
+    <string-array name="toolbar_titles">
+        <item>Hotels</item>
+        <item>Restaurants</item>
+        <item>Monumets</item>
+        <item>Events</item>
+    </string-array>
+
+    <!-- Hotels details -->
+    <string name="Category_hotels">Hotels</string>
+    <string name="Albani">Albani Hotel</string>
+    <string name="Albani_address">Albani Street N.1</string>
+
+    <string name="Antico">Antico Hotel</string>
+    <string name="Antico_address">Antico Street N.2</string>
+
+    <string name="Ariston">Ariston Hotel</string>
+    <string name="Ariston_address">Ariston Street N.3</string>
+
+    <string name="Aurelia">Aurelia Hotel</string>
+    <string name="Aurelia_address">Aurelia Street N.4</string>
+
+    <string name="Capo_DAfrica">Capo D\'Africa Hotel</string>
+    <string name="Capo_DAfrica_address">Capo d\'Africa Street N.5</string>
+
+    <string name="Decó"> Decó Hotel</string>
+    <string name="Deco_address">Decó Street N.6</string>
+
+    <string name="Imperiale">Imperiale Hotel</string>
+    <string name="Imperiale_address">Imperiale Street N.7</string>
+
+    <string name="Lifestyle">Lifestyle Hotel</string>
+    <string name="Lifestyle_address">Lifestyle Street N.8</string>
+
+    <string name="Marriot_Park">Marriot Park Hotel</string>
+    <string name="Marrior_Park_address"> Street N.9</string>
+
+    <string name="Otivm">Otivm Hotel</string>
+    <string name="Otivm_address">Otivm Street N.10</string>
+
+    <!-- Restaurants Details -->
+    <string name="Category_restaurants">Restaurants</string>
+    <string name="Al_34">Ristorante al 34</string>
+    <string name="al34_address">Al 34 Street N.1</string>
+
+    <string name="Al_Colosseo">Al Colosseo</string>
+    <string name="al_colosseo_address">Al Colosseo Street N.2</string>
+
+    <string name="Cosolini">Cosolini</string>
+    <string name="cosolini_address">Cosolini Street N.3</string>
+
+    <string name="Cotto">Cotto</string>
+    <string name="cotto_address">Street N.4</string>
+
+    <string name="Fine_dining_lovers">Fine Dining Lovers</string>
+    <string name="fine_dining_address">Fine Dining Street N.5</string>
+
+    <string name="Glass_hostaria">Glass Hostaria></string>
+    <string name="glass_hostaria_address">Street N.6</string>
+
+    <string name="Piazza_Navona">Piazza Navona</string>
+    <string name="piazza_navona_address">Piazza Navona Square N.7</string>
+
+    <string name="Settemari">Settemari</string>
+    <string name="settemari_address">Street N.8</string>
+
+    <string name="Tempio_iside">Tempio di Iside</string>
+    <string name="tempio_di_iside_address">Street N.9</string>
+
+    <string name="Tetti_di_roma">Tetti di Roma</string>
+    <string name="tetti_di_roma_address">Street N.10</string>
+
+    <!-- Monuments Details -->
+    <string name="Category_monuments">Monuments</string>
+    <string name="Arco_trionfo">Arco di Trionfo</string>
+    <string name="arco_trionfo_address">Arco di Trionfo Street N.1</string>
+
+    <string name="Cappella_sistina">Cappella Sistina</string>
+    <string name="cappella_sistina_address">Vaticano Street N.2</string>
+
+    <string name="Castel_gandolfo">Castel Gandolfo</string>
+    <string name="castel_gandolfo_address">Castel Gandolfo Street N.3</string>
+
+    <string name="Colosseo">Colosseo</string>
+    <string name="colosseo_address">Colosseo Street N.4</string>
+
+    <string name="Fontana_trevi">Fontana di Trevi</string>
+    <string name="fontana_trevi_address">Fontana di Trevi Square N.5</string>
+
+    <string name="Fori_imperiali">Fori Imperiali</string>
+    <string name="fori_imperiali_address">Fori Imperiali Street N.6</string>
+
+    <string name="Pantheon">Pantheon</string>
+    <string name="pantheon_address">Pantheon Street N.8</string>
+
+    <string name="Piramide">Piramide Cestia</string>
+    <string name="piramide_address">Piramide Cestia Street N.9</string>
+
+    <string name="Vittoriano">Vittoriano</string>
+    <string name="vittoriano_address">Vittoriano Street N.10</string>
+
+    <!-- Events Details -->
+    <string name="Category_events">Events</string>
+    <string name="Birroforum">Birroforum</string>
+    <string name="birroforum_address">Birroforum Street N.1</string>
+
+    <string name="Christmas_market">Christmas Market</string>
+    <string name="christas_navona_address">Piazza Navona Street N.2</string>
+
+    <string name="Citta_della_pizza">Citta della Pizza</string>
+    <string name="citta_della_pizza_address">Citta della Pizza Street N.3</string>
+
+    <string name="Exhibitions">Exhibitions</string>
+    <string name="exhibitions_address">Vattela a pesca Street N.4</string>
+
+    <string name="Museums_in_music">Museums in Music</string>
+    <string name="museums_in_music_address">Museums in Music Street N.5</string>
+
+    <string name="Music">Music</string>
+    <string name="music_address">Musci Street N.6</string>
+
+    <string name="Nightlife">NightLife</string>
+    <string name="nightlife_address">Via della Concordia Street N.7</string>
+
+    <string name="Romaeuropa">Romaeuropa Festival</string>
+    <string name="romaeuropa_address">Festival Street N.8</string>
+
+    <string name="Taste_of_rome">Taste of Rome</string>
+    <string name="taste_rome_address">Via Bufalotta Street N.9</string>
+
+    <string name="Warhol_rome">Warhol Marilyn Rome</string>
+    <string name="warhol_address">Stalle Comunale Street N.10</string>
+    <string name="contentDescr">TODO</string>
+    <string name="description">Description:</string>
+    <string name="book">Book</string>
+    <string name="availability">Availability</string>
+
+    <!-- Descriptions Section -->
+    <string name="Hotel_description">Hotel Albani Roma is an 8-minute walk from Villa Borghese Art Gallery and Gardens. It offers free parking, spacious air-conditioned rooms with LCD satellite TV and free Wi-Fi. Busses to Termini Train Station and Rome\'s historic center stop 250 m from the hotel, while a tram stop with direct links to Rome\'s main sights is just opposite the property. The MACRO Art Museum is a 10-minute walk away. All bright rooms at Albani Roma include a private bathroom with hairdryer, toiletry set and slippers. Some rooms offer a balcony. Breakfast is buffet style, and includes croissants, cold meats and cheeses. The La Villa restaurant features an original chandelier, and serves traditional cuisine. Nomentano is a great choice for travelers interested in ancient landmarks, old-town exploration and art. Couples in particular like the location – they rated it 8.1 for a two-person trip. We speak your language!</string>
+
+    <!-- Restaurants Section -->
+    <string name="Restaurant_description">Back from the beach, a bike ride in our beautiful surroundings or shopping, you will certainly appreciate the relaxing at the table enjoying good wine and good food. The imagination of our chefs will never bore you by proposing always different and tasty dishes. The care and choice of local and genuine ingredients will delight you. The accurate service, the elegance of our rooms will make you feel at ease. The availability and friendliness of the staff will pamper you. You will always have a wide choice of vegetables on our buffet to season with the renowned oil of our land. You can always choose between a dish of land, sea or one of our third tasty dishes, a soup or a cold dish. As a last course you will always have the choice between seasonal fruit, a fruit salad of fresh fruit, an ice cream or one of the desserts prepared by our pastry chef.</string>
+
+    <!-- Monuments Section -->
+    <string name="Monument_description">The Flavian Amphitheatre, better known to the world as the Colosseum, is the most universally recognized icon in Rome. You can explore this popular tourist attraction on your own or take a guided tour for more information and the opportunity to ask questions as you go along. Despite damage by fire, earthquake, and neglect, as well as its conversion into a fortress of the Frangipani family, the pillaging of its stone for construction of palaces, and the constant pollution of modern traffic around it, the Colosseum still creates a powerful impression of its original form. The largest structure surviving from ancient Rome, the Colosseum was begun by Vespasian in AD 72 and eight years later enlarged by his son, Titus, adding the fourth story. The name of the Colosseum derived from the immense statue of Nero - called the colossus after the Colossus of Rhodes - that stood nearby; the entire area was originally within Nero\'s Domus Aurea, his palace complex in the center of ancient Rome.</string>
+
+    <!-- Events Section -->
+    <string name="Event_description">In the heart of Rome, in the Prati district just footsteps from Piazza Cavour, get ready to sip cocktails and dance the night away in a beautiful lounge area with a bar and dance floor. Glamorous people, elegant vibe and contemporary music await you for a night that you won’t forget.</string>
+
+</resources>

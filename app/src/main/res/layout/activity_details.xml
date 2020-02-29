@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.DetailsActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar_details_activity"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            android:theme="@style/ThemeOverlay.AppCompat.ActionBar"/>
+
+        <ImageView
+            android:id="@+id/image_details"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/size_250dp"
+            android:layout_below="@+id/toolbar_details_activity"
+            android:scaleType="centerCrop"
+            android:src="@drawable/hotel_albani"
+            android:contentDescription="@string/contentDescr" />
+
+        <TextView
+            android:id="@+id/name_details"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/image_details"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+            android:textStyle="bold"
+            android:layout_margin="@dimen/size_14dp"
+            android:layout_centerInParent="true"
+            tools:text="@string/Albani" />
+
+        <View
+            android:id="@+id/separator"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorPrimaryDark"
+            android:layout_below="@id/name_details"/>
+
+        <LinearLayout
+            android:id="@+id/horizontal_linear_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/separator"
+            android:orientation="horizontal"
+            android:layout_margin="@dimen/size_14dp"
+            tools:ignore="UseCompoundDrawables">
+
+            <ImageView
+                android:id="@+id/location_imageView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_location_on"
+                android:contentDescription="@string/contentDescr"/>
+
+            <TextView
+                android:id="@+id/location_textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/size_10dp"
+                tools:text="address"
+                android:layout_marginStart="@dimen/size_10dp" />
+
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/horizontal_linear_layout"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+            android:textStyle="italic"
+            android:layout_marginTop="@dimen/size_10dp"
+            android:layout_marginLeft="@dimen/size_14dp"
+            android:text="@string/description"
+            android:layout_marginStart="@dimen/size_14dp" />
+
+        <android.support.v4.widget.NestedScrollView
+            android:id="@+id/nestedScrollView"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_margin="@dimen/size_14dp"
+            android:layout_below="@id/description">
+
+            <TextView
+                android:id="@+id/description_details"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/description"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                tools:text="Hotel Albani Roma is an 8-minute walk from Villa Borghese Art Gallery and Gardens. It offers free parking, spacious air-conditioned rooms with LCD satellite TV and free Wi-Fi. Busses to Termini Train Station and Rome's historic center stop 250 m from the hotel, while a tram stop with direct links to Rome's main sights is just opposite the property. The MACRO Art Museum is a 10-minute walk away. All bright rooms at Albani Roma include a private bathroom with hairdryer, toiletry set and slippers. Some rooms offer a balcony. Breakfast is buffet style, and includes croissants, cold meats and cheeses. The La Villa restaurant features an original chandelier, and serves traditional cuisine. Nomentano is a great choice for travelers interested in ancient landmarks, old-town exploration and art. Couples in particular like the location – they rated it 8.1 for a two-person trip. We speak your language!"/>
+        </android.support.v4.widget.NestedScrollView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/nestedScrollView"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/size_14dp"
+            android:layout_marginLeft="@dimen/size_10dp"
+            android:layout_marginRight="@dimen/size_10dp">
+
+            <Button
+                android:id="@+id/book"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/book"
+                tools:ignore="ButtonStyle" />
+            <Button
+                android:id="@+id/availabilty"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/availability"
+                tools:ignore="ButtonStyle" />
+        </LinearLayout>
+    </RelativeLayout>
+</ScrollView>
