@@ -2,20 +2,20 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
     <group android:checkableBehavior="single">
         <item
-            android:id="@+id/nav_hotels"
-            android:icon="@drawable/ic_hotel"
-            android:title="@string/items" />
-        <item
-            android:id="@+id/nav_restaurants"
-            android:icon="@drawable/ic_action_restaurant"
-            android:title="@string/restaurants" />
-        <item
-            android:id="@+id/nav_monuments"
+            android:id="@+id/nav_electricity_meter"
             android:icon="@drawable/ic_action_camera"
-            android:title="@string/monuments" />
+            android:title="@string/electricityMeters" />
         <item
-            android:id="@+id/nav_events"
-            android:icon="@drawable/ic_event"
-            android:title="@string/events" />
+            android:id="@+id/nav_bhkw"
+            android:icon="@drawable/ic_bhkw"
+            android:title="@string/bhkw" />
+        <item
+            android:id="@+id/nav_water_meter"
+            android:icon="@drawable/ic_water_meter"
+            android:title="@string/waterMeter" />
+        <item
+            android:id="@+id/nav_softner"
+            android:icon="@drawable/ic_nachspeiseeinrichtung"
+            android:title="@string/softner" />
     </group>
 </menu>

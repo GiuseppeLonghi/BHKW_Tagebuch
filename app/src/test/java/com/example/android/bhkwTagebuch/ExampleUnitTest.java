@@ -1,4 +1,4 @@
-package com.example.android.tourguide;
+package com.example.android.bhkwTagebuch;
 
 import org.junit.Test;
 

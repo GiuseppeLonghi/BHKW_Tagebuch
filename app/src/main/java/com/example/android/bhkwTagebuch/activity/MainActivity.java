@@ -1,4 +1,4 @@
-package com.example.android.tourguide.activity;
+package com.example.android.bhkwTagebuch.activity;
 
 import android.support.annotation.NonNull;
 import android.support.design.widget.NavigationView;
@@ -10,12 +10,14 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.TextView;
 
-import com.example.android.tourguide.R;
-import com.example.android.tourguide.fragment.EventsFragment;
-import com.example.android.tourguide.fragment.HotelsFragment;
-import com.example.android.tourguide.fragment.MonumentsFragment;
-import com.example.android.tourguide.fragment.RestaurantsFragment;
+import com.example.android.bhkwTagebuch.fragment.EventsFragment;
+import com.example.android.bhkwTagebuch.fragment.HotelsFragment;
+import com.example.android.bhkwTagebuch.fragment.MonumentsFragment;
+import com.example.android.bhkwTagebuch.fragment.RestaurantsFragment;
+import com.example.android.bhkwTagebuch.R;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -52,6 +54,8 @@ public class MainActivity extends AppCompatActivity {
 
         // To manage callbacks when a list item in the drawer is tapped,
         NavigationView navigationView = findViewById(R.id.nav_view);
+        // Following line is needed to fix the issue with icons not displayed correctly
+        navigationView.setItemIconTintList(null);
         navigationView.setNavigationItemSelectedListener(
                 new NavigationView.OnNavigationItemSelectedListener() {
                     @Override
@@ -61,19 +65,19 @@ public class MainActivity extends AppCompatActivity {
 
                         // to update the UI based on the item selected
                         switch (menuItem.getItemId()) {
-                            case R.id.nav_hotels:
+                            case R.id.nav_electricity_meter:
                                 mNavItemIndex = 0;
                                 CURRENT_TAG = TAG_HOTELS;
                                 break;
-                            case R.id.nav_restaurants:
+                            case R.id.nav_bhkw:
                                 mNavItemIndex = 1;
                                 CURRENT_TAG = TAG_RESTAURANTS;
                                 break;
-                            case R.id.nav_monuments:
+                            case R.id.nav_water_meter:
                                 mNavItemIndex = 2;
                                 CURRENT_TAG = TAG_MONUMENTS;
                                 break;
-                            case R.id.nav_events:
+                            case R.id.nav_softner:
                                 mNavItemIndex = 3;
                                 CURRENT_TAG = TAG_EVENTS;
                                 break;

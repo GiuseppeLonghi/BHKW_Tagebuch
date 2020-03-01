@@ -1,4 +1,4 @@
-package com.example.android.tourguide.fragment;
+package com.example.android.bhkwTagebuch.fragment;
 
 
 import android.content.Intent;
@@ -11,10 +11,10 @@ import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.ListView;
 
-import com.example.android.tourguide.R;
-import com.example.android.tourguide.activity.DetailsActivity;
-import com.example.android.tourguide.util.Item;
-import com.example.android.tourguide.util.ItemAdapter;
+import com.example.android.bhkwTagebuch.R;
+import com.example.android.bhkwTagebuch.activity.DetailsActivity;
+import com.example.android.bhkwTagebuch.util.Item;
+import com.example.android.bhkwTagebuch.util.ItemAdapter;
 
 import java.util.ArrayList;
 

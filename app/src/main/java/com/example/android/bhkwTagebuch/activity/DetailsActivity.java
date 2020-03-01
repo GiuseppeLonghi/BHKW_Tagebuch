@@ -1,4 +1,4 @@
-package com.example.android.tourguide.activity;
+package com.example.android.bhkwTagebuch.activity;
 
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
@@ -10,7 +10,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.example.android.tourguide.R;
+import com.example.android.bhkwTagebuch.R;
 
 public class DetailsActivity extends AppCompatActivity {
 

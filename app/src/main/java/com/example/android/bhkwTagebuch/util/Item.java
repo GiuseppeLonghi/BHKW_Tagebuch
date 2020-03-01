@@ -1,4 +1,4 @@
-package com.example.android.tourguide.util;
+package com.example.android.bhkwTagebuch.util;
 
 /**
  * {@link Item} represents an Item item.
