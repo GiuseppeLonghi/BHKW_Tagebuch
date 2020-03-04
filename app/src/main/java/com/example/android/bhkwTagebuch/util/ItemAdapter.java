@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.example.android.tourguide.util;
+package com.example.android.bhkwTagebuch.util;
 
 import android.content.Context;
 import android.support.annotation.NonNull;
@@ -24,7 +24,7 @@ import android.widget.ArrayAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.example.android.tourguide.R;
+import com.example.android.bhkwTagebuch.R;
 
 import java.util.ArrayList;
 
