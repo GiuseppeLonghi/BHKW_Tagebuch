@@ -3,7 +3,7 @@
     android:id="@+id/navigation_header_container"
     android:layout_width="match_parent"
     android:layout_height="192dp"
-    android:background="@drawable/rome_background"
+    android:background="@drawable/werner_wohnbau_haustyp_134dhh_gartenansicht_9"
     android:padding="16dp"
     android:theme="@style/ThemeOverlay.AppCompat.Dark"
     android:orientation="vertical"

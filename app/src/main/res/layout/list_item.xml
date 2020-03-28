@@ -8,11 +8,11 @@
     android:minHeight="@dimen/list_item_height">
 
     <ImageView
-        android:id="@+id/image_hotel"
+        android:id="@+id/image"
         android:layout_width="@dimen/list_item_height"
         android:layout_height="@dimen/list_item_height"
-        tools:src="@drawable/hotel_antico"
-        android:scaleType="center"
+        tools:src="@drawable/electricity_meter1_9"
+        android:scaleType="centerCrop"
         android:contentDescription="@string/contentDescr" />
 
     <RelativeLayout
@@ -22,11 +22,11 @@
         android:layout_alignParentBottom="true"
         android:layout_alignParentRight="true"
         android:layout_alignParentTop="true"
-        android:layout_toRightOf="@id/image_hotel"
+        android:layout_toRightOf="@id/image"
         android:orientation="vertical"
         android:paddingLeft="@dimen/size_16dp"
         android:layout_alignParentEnd="true"
-        android:layout_toEndOf="@id/image_hotel"
+        android:layout_toEndOf="@id/image"
         android:paddingStart="@dimen/size_16dp"
         tools:ignore="RtlSymmetry">
 
@@ -38,7 +38,7 @@
             android:textAppearance="?android:textAppearanceMedium"
             android:textColor="@android:color/black"
             android:textStyle="bold"
-            tools:text="Name" />
+            tools:text="Haus Nr." />
 
         <TextView
             android:id="@+id/address_item_text_view"
@@ -48,6 +48,6 @@
             android:gravity="top"
             android:textAppearance="?android:textAppearanceSmall"
             android:textColor="@android:color/black"
-            tools:text="Address" />
+            tools:text="Number counter" />
     </RelativeLayout>
 </RelativeLayout>

@@ -73,7 +73,7 @@ public class ItemAdapter extends ArrayAdapter<Item> {
             addressHotelTextView.setText(currentItem.getAddress());
 
             // Find the ImageView in the list_item.xml layout with the ID image.
-            ImageView imageHotel = listItemView.findViewById(R.id.image_hotel);
+            ImageView imageHotel = listItemView.findViewById(R.id.image);
 
             // If an image is available, display the provided image based on the resource ID */
             imageHotel.setImageResource(currentItem.getImageResourceId());

@@ -1,17 +1,34 @@
 <resources>
-    <string name="app_name">Rome Tour Guide</string>
+    <string name="app_name">BHKW Tagebuch</string>
     <string name="electricityMeters">House Stromzähler</string>
     <string name="bhkw">BHKW</string>
-    <string name="waterMeter">Wasserzähler</string>
+    <string name="waterMeter">Wassergesamt </string>
+    <string name="gasMeter">Zähler Gasgesamt </string>
     <string name="softner">Nachspeiseeinrichtung</string>
 
     <!-- Toolbar titles when navigation menu item is selected -->
     <string-array name="toolbar_titles">
-        <item>Hotels</item>
-        <item>Restaurants</item>
-        <item>Monumets</item>
-        <item>Events</item>
+        <item>House Stromzähler</item>
+        <item>BHKW</item>
+        <item>Wassergesamt</item>
+        <item>Zähler Gasgesamt</item>
+        <item>Nachspeiseeinrichtung</item>
     </string-array>
+
+    <!-- House Stromzahler -->
+    <string name="number">Number</string>
+    <string name="year">Year</string>
+    <string name="month">Month</string>
+    <string name="day">Day</string>
+    <string name="house1">Haus Nr. 1 -\n 1077910</string>
+    <string name="house3">Haus Nr. 3 -\n 1077916</string>
+    <string name="house5">Haus Nr. 5 -\n 1077900</string>
+    <string name="house7">Haus Nr. 7 -\n 1077914</string>
+    <string name="generalCurrent">Allegemein -\n strom \n 1077915</string>
+    <string name="electricityMeter">Stromzähler -\n 1093123</string>
+    <string name="counterNumber1">1.8.0</string>
+    <string name="counterNumber2">2.8.0</string>
+
 
     <!-- Hotels details -->
     <string name="Category_hotels">Hotels</string>

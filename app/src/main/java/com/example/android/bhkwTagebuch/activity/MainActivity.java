@@ -24,11 +24,12 @@ public class MainActivity extends AppCompatActivity {
     private DrawerLayout mDrawerLayout;
 
     // tags used to attach the fragments
-    private static final String TAG_HOTELS = "Hotels";
-    private static final String TAG_RESTAURANTS = "Restaurants";
-    private static final String TAG_MONUMENTS = "Monuments";
-    private static final String TAG_EVENTS = "Events";
-    public static String CURRENT_TAG = TAG_HOTELS;
+    private static final String TAG_HOUSE_STROMZAHLER = "House Stromzähler";
+    private static final String TAG_BHKW = "BHKW";
+    private static final String TAG_WASSERZAHLER = "Wasserzähler";
+    private static final String TAG_GASZAHLER = "Gaszähler";
+    private static final String TAG_NACHSPEISEEINRICHTUNG = "Nachspeiseeinrichtung";
+    public static String CURRENT_TAG = TAG_HOUSE_STROMZAHLER;
 
     // index to identify current nav menu item
     public static int mNavItemIndex = 0;
@@ -67,19 +68,23 @@ public class MainActivity extends AppCompatActivity {
                         switch (menuItem.getItemId()) {
                             case R.id.nav_electricity_meter:
                                 mNavItemIndex = 0;
-                                CURRENT_TAG = TAG_HOTELS;
+                                CURRENT_TAG = TAG_HOUSE_STROMZAHLER;
                                 break;
                             case R.id.nav_bhkw:
                                 mNavItemIndex = 1;
-                                CURRENT_TAG = TAG_RESTAURANTS;
+                                CURRENT_TAG = TAG_BHKW;
                                 break;
                             case R.id.nav_water_meter:
                                 mNavItemIndex = 2;
-                                CURRENT_TAG = TAG_MONUMENTS;
+                                CURRENT_TAG = TAG_WASSERZAHLER;
+                                break;
+                            case R.id.nav_gas_meter:
+                                mNavItemIndex = 3;
+                                CURRENT_TAG = TAG_GASZAHLER;
                                 break;
                             case R.id.nav_softner:
-                                mNavItemIndex = 3;
-                                CURRENT_TAG = TAG_EVENTS;
+                                mNavItemIndex = 4;
+                                CURRENT_TAG = TAG_NACHSPEISEEINRICHTUNG;
                                 break;
                              default:
                                  mNavItemIndex = 0;
@@ -109,12 +114,11 @@ public class MainActivity extends AppCompatActivity {
 
         if (savedInstanceState == null) {
             mNavItemIndex = 0;
-            CURRENT_TAG = TAG_HOTELS;
+            CURRENT_TAG = TAG_HOUSE_STROMZAHLER;
 
             // Selecting appropriate nav menu item
             navigationView.getMenu().getItem(mNavItemIndex).setChecked(true);
-            // set toolbar title
-//            getSupportActionBar().setTitle(mToolbarTitles[mNavItemIndex]);
+
             // if user select the current navigation menu again, don't do anything
             // just close the navigation drawer
             if (getSupportFragmentManager().findFragmentByTag(CURRENT_TAG) != null)
@@ -130,7 +134,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     /**
-     * It returns the correct fragment selected
+     * It returns the correct fragmenthouseelectricitymeter selected
      *
      */
     private Fragment getFragment() {
@@ -147,7 +151,6 @@ public class MainActivity extends AppCompatActivity {
             case 3:
                 // events fragment
                 return new EventsFragment();
-
             default:
                 return new HotelsFragment();
         }

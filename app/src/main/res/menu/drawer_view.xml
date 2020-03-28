@@ -3,7 +3,7 @@
     <group android:checkableBehavior="single">
         <item
             android:id="@+id/nav_electricity_meter"
-            android:icon="@drawable/ic_action_camera"
+            android:icon="@drawable/ic_electricity_meter"
             android:title="@string/electricityMeters" />
         <item
             android:id="@+id/nav_bhkw"
@@ -13,6 +13,10 @@
             android:id="@+id/nav_water_meter"
             android:icon="@drawable/ic_water_meter"
             android:title="@string/waterMeter" />
+        <item
+            android:id="@+id/nav_gas_meter"
+            android:icon="@drawable/ic_gas_meter"
+            android:title="@string/gasMeter" />
         <item
             android:id="@+id/nav_softner"
             android:icon="@drawable/ic_nachspeiseeinrichtung"
