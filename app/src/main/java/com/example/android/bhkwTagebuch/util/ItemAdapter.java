@@ -58,25 +58,25 @@ public class ItemAdapter extends ArrayAdapter<Item> {
         Item currentItem = getItem(position);
 
         // Find the TextView in the list_item.xml layout with the ID name_item_text_view.
-        TextView nameHotelTextView = listItemView.findViewById(R.id.name_item_text_view);
+        TextView nameItemTextView = listItemView.findViewById(R.id.name_item_text_view);
 
         if (currentItem != null) {
             // Get the Item name from the currentItem object and set this text on
             // the Name Item TextView.
-            nameHotelTextView.setText(currentItem.getName());
+            nameItemTextView.setText(currentItem.getHouseNumber());
 
             // Find the TextView in the list_item.xml layout with the ID address_item_text_view.
-            TextView addressHotelTextView = listItemView.findViewById(R.id.address_item_text_view);
+            TextView numberCounterTextView = listItemView.findViewById(R.id.number_counter_item_text_view);
 
             // Get the address Item from the currentItem object and set this text on
             // the address Item TextView.
-            addressHotelTextView.setText(currentItem.getAddress());
+            numberCounterTextView.setText(currentItem.getCounterNumber());
 
-            // Find the ImageView in the list_item.xml layout with the ID image.
-            ImageView imageHotel = listItemView.findViewById(R.id.image);
+            // Find the ImageView in the list_item.xml layout with the ID electricityCounterImage.
+            ImageView electricityCounterImage = listItemView.findViewById(R.id.electricityCounterImage);
 
             // If an image is available, display the provided image based on the resource ID */
-            imageHotel.setImageResource(currentItem.getImageResourceId());
+            electricityCounterImage.setImageResource(currentItem.getImageResourceId());
         }
         return listItemView;
     }

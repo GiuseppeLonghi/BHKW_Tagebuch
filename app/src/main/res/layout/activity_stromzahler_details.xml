@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.bhkwTagebuch.activity.DetailsStromzahlerActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar_stromzahler_details_activity"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            android:theme="@style/ThemeOverlay.AppCompat.ActionBar"/>
+
+        <ImageView
+            android:id="@+id/image_stromzahler_details"
+            android:layout_width="368dp"
+            android:layout_height="319dp"
+            android:layout_below="@+id/toolbar_stromzahler_details_activity"
+            android:layout_marginStart="@dimen/size_26dp"
+            android:layout_marginLeft="@dimen/size_26dp"
+            android:layout_marginTop="@dimen/size_26dp"
+            android:layout_marginEnd="@dimen/size_26dp"
+            android:layout_marginRight="@dimen/size_26dp"
+            android:layout_marginBottom="@dimen/size_26dp"
+            android:contentDescription="@string/todo"
+            android:scaleType="fitCenter"
+            android:src="@drawable/electricity_meter" />
+
+        <TextView
+            android:id="@+id/house_number_stromzahler_details"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/image_stromzahler_details"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+            android:textStyle="bold"
+            android:layout_margin="@dimen/size_1dp"
+            android:layout_centerInParent="true"
+            tools:text="@string/electricityMeter" />
+
+        <TextView
+            android:id="@+id/counter_number_stromzahler_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/house_number_stromzahler_details"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+            android:textStyle="bold"
+            android:layout_margin="@dimen/size_1dp"
+            android:layout_centerInParent="true"
+            tools:text="@string/electricityMeterNumber" />
+
+        <View
+            android:id="@+id/separator"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorPrimaryDark"
+            android:layout_below="@id/counter_number_stromzahler_detail"/>
+
+        <LinearLayout
+            android:id="@+id/horizontal_linear_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/separator"
+            android:orientation="horizontal"
+            android:layout_margin="@dimen/size_14dp"
+            tools:ignore="UseCompoundDrawables">
+
+            <ImageView
+                android:id="@+id/location_stromzahler_imageView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_location_on"
+                android:contentDescription="@string/todo" />
+
+            <TextView
+                android:id="@+id/location_stromzahler_textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/size_10dp"
+                tools:text="address"
+                android:layout_marginStart="@dimen/size_10dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/vertical_linear_layout"
+            android:layout_below="@+id/horizontal_linear_layout"
+            android:orientation="vertical"
+            android:layout_marginTop="@dimen/size_6dp"
+            android:layout_marginLeft="@dimen/size_10dp"
+            android:layout_marginRight="@dimen/size_10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/horizontal_linear_layout1"
+                android:orientation="horizontal"
+                android:layout_marginTop="@dimen/size_1dp"
+                android:layout_marginLeft="@dimen/size_10dp"
+                android:layout_marginRight="@dimen/size_10dp">
+
+                <TextView
+                    android:id="@+id/reference_textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/reference"
+                    android:textStyle="bold"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/referenceEditText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/size_14dp"
+                    android:layout_marginTop="@dimen/size_10dp"
+                    android:ems="10"
+                    android:hint="@string/kWh"
+                    android:inputType="numberDecimal"
+                    android:layout_marginStart="@dimen/size_14dp"
+                    android:autofillHints="@string/todo" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/horizontal_linear_layout2"
+                android:orientation="horizontal"
+                android:layout_marginTop="@dimen/size_6dp"
+                android:layout_marginLeft="@dimen/size_10dp"
+                android:layout_marginRight="@dimen/size_10dp">
+
+                <TextView
+                    android:id="@+id/delivery_textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/delivery"
+                    android:textStyle="bold"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/deliveryEditText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/size_14dp"
+                    android:layout_marginTop="@dimen/size_10dp"
+                    android:ems="10"
+                    android:hint="@string/kWh"
+                    android:inputType="numberDecimal"
+                    android:layout_marginStart="@dimen/size_14dp"
+                    android:autofillHints="@string/todo" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/vertical_linear_layout"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/size_14dp"
+            android:layout_marginLeft="@dimen/size_10dp"
+            android:layout_marginRight="@dimen/size_10dp">
+
+            <Button
+                android:id="@+id/stromzahler_cancelButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/cancel"
+                tools:ignore="ButtonStyle" />
+
+            <Button
+                android:id="@+id/stromzahler_confirmButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/confirm"
+                tools:ignore="ButtonStyle" />
+        </LinearLayout>
+
+    </RelativeLayout>
+</ScrollView>

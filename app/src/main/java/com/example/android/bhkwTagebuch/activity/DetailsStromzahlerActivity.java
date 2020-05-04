@@ -1,8 +1,8 @@
 package com.example.android.bhkwTagebuch.activity;
 
+import android.os.Bundle;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.widget.Button;
@@ -13,14 +13,14 @@ import android.widget.Toast;
 
 import com.example.android.bhkwTagebuch.R;
 
-public class DetailsActivity extends AppCompatActivity {
+public class DetailsStromzahlerActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_details);
+        setContentView(R.layout.activity_stromzahler_details);
 
-        Toolbar toolbar = findViewById(R.id.toolbar_details_activity);
+        Toolbar toolbar = findViewById(R.id.toolbar_stromzahler_details_activity);
         setSupportActionBar(toolbar);
 
         ActionBar actionbar = getSupportActionBar();
@@ -31,32 +31,36 @@ public class DetailsActivity extends AppCompatActivity {
         }
 
         // Setting the Item image
-        ImageView imageItem = findViewById(R.id.image_details);
+        ImageView imageItem = findViewById(R.id.image_stromzahler_details);
         imageItem.setImageResource(getIntent().getExtras().getInt("image"));
 
         // Setting the Item House Number details
-        TextView houseNumberItem = findViewById(R.id.house_number_details);
+        TextView houseNumberItem = findViewById(R.id.house_number_stromzahler_details);
         houseNumberItem.setText(getIntent().getExtras().getString("houseNumber"));
 
         // Setting the Item Counter Number details
-        TextView counterNumberItem = findViewById(R.id.counter_number_detail);
+        TextView counterNumberItem = findViewById(R.id.counter_number_stromzahler_detail);
         counterNumberItem.setText(getIntent().getExtras().getString("counterNumber"));
 
-        TextView addressItem = findViewById(R.id.location_textView);
+        TextView addressItem = findViewById(R.id.location_stromzahler_textView);
         addressItem.setText(getIntent().getExtras().getString("location"));
 
-        final Button cancelButton = findViewById(R.id.cancelButton);
+
+
+        final Button cancelButton = findViewById(R.id.stromzahler_cancelButton);
         cancelButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Toast.makeText(getApplicationContext(), cancelButton.getText() + " button pressed", Toast.LENGTH_SHORT).show();
 
-                EditText kwhMeasurementEditText = findViewById(R.id.kwhEditText);
-                kwhMeasurementEditText.getText().clear();
+                EditText kwhMeasurementReferenceEditText = findViewById(R.id.referenceEditText);
+                EditText kwhMeasurementDeliveryEditText = findViewById(R.id.deliveryEditText);
+                kwhMeasurementReferenceEditText.getText().clear();
+                kwhMeasurementDeliveryEditText.getText().clear();
             }
         });
 
-        final Button confirmButton = findViewById(R.id.confirmButton);
+        final Button confirmButton = findViewById(R.id.stromzahler_confirmButton);
         confirmButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

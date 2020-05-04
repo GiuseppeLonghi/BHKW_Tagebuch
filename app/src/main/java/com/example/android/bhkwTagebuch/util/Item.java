@@ -1,57 +1,57 @@
 package com.example.android.bhkwTagebuch.util;
 
 /**
- * {@link Item} represents an Item item.
+ * {@link Item} represents an Item to be displayed in the fragment layout.
  * It contains Item name, address and an image whether available.
  */
 public class Item {
 
     /** Item Name */
-    private String mName;
+    private String mHouseNumber;
 
-    /** Item Address */
-    private String mAddress;
-
-    /** Item Description */
-    private String mDescription;
-
-    /** Item Category */
-    private String mCategory;
+    /** Item  Counter Number*/
+    private String mCounterNumber;
 
     /** Image resource ID for the word */
     private int mImageResourceId;
 
+    /** Item Address */
+    private String mAddress;
+
+    /** Item Reference (Bezug) */
+    private String mReference = "1.8.0";
+
+    /** Item Delivery (Lieferung) */
+    private String mDelivery = "2.8.0";
+
     /**
      * Create a new Item object.
-     *
-     * @param name is the name of the item (an item can be an Item, Monument, Restaurant, Event)
-     * @param address is the address of the object represented by the item
+     *  @param houseNumber is the ...
+     * @param counterNumber is the ....
+     * @param address is the location of the house
      * @param imageResourceId is the drawable resource ID for the image associated with the item
-     * @param description is the description for the item (description of the Hotel or Restaurant etc.)
-     * @param category is the the category of the item (Hotels, Restaurants, Monuments, Events)
      */
-    public Item(String name, String address, int imageResourceId, String description, String category) {
-        mName = name;
-        mAddress = address;
-        mImageResourceId = imageResourceId;
-        mDescription = description;
-        mCategory = category;
+    public Item(String houseNumber, String counterNumber, String address, int imageResourceId) {
+        this.mHouseNumber = houseNumber;
+        this.mCounterNumber = counterNumber;
+        this.mAddress = address;
+        this.mImageResourceId = imageResourceId;
     }
 
     /**
-     * Returns the Item name
-     * @return item name
+     * Returns the Item House number
+     * @return item mHouseNumber
      */
-    public String getName() {
-        return mName;
+    public String getHouseNumber() {
+        return mHouseNumber;
     }
 
     /**
-     * Returns the Item Address
-     * @return item address
+     * Returns the Item Counter number
+     * @return item mCounterNumber
      */
-    public String getAddress() {
-        return mAddress;
+    public String getCounterNumber() {
+        return mCounterNumber;
     }
 
     /**
@@ -63,18 +63,18 @@ public class Item {
     }
 
     /**
-     * Return the description of the item.
-     * @return item description
+     * Returns the Item Address
+     * @return item mAddress
      */
-    public String getDescription() {
-        return mDescription;
+    public String getAddress() {
+        return mAddress;
     }
 
-    /**
-     * Return the Category of the item (Hotels, Restaurants, Events, Monuments).
-     * @return item category
-     */
-    public String getCategory() {
-        return mCategory;
+    public String getReference() {
+        return mReference;
+    }
+
+    public String getDelivery() {
+        return mDelivery;
     }
 }

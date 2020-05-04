@@ -2,24 +2,28 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
     <group android:checkableBehavior="single">
         <item
+            android:id="@+id/nav_house_electricity_meter"
+            android:icon="@drawable/house1_electricity_meter"
+            android:title="@string/houseElectricityMeters" />
+        <item
             android:id="@+id/nav_electricity_meter"
-            android:icon="@drawable/ic_electricity_meter"
-            android:title="@string/electricityMeters" />
+            android:icon="@drawable/electricity_meter"
+            android:title="@string/electricityMeter" />
         <item
             android:id="@+id/nav_bhkw"
-            android:icon="@drawable/ic_bhkw"
+            android:icon="@drawable/bhkw_9"
             android:title="@string/bhkw" />
         <item
             android:id="@+id/nav_water_meter"
-            android:icon="@drawable/ic_water_meter"
+            android:icon="@drawable/wassergesamt_9"
             android:title="@string/waterMeter" />
         <item
             android:id="@+id/nav_gas_meter"
-            android:icon="@drawable/ic_gas_meter"
+            android:icon="@drawable/zhlergasgesamt_9"
             android:title="@string/gasMeter" />
         <item
             android:id="@+id/nav_softner"
-            android:icon="@drawable/ic_nachspeiseeinrichtung"
+            android:icon="@drawable/nachspeiseeinrichtung_9"
             android:title="@string/softner" />
     </group>
 </menu>

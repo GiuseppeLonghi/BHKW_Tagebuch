@@ -14,7 +14,7 @@
 -->
 <resources>
     <!-- Height of each list item -->
-    <dimen name="list_item_height">88dp</dimen>
+    <dimen name="list_item_height">120dp</dimen>
     <dimen name="size_1dp">1dp</dimen>
     <dimen name="size_4dp">4dp</dimen>
     <dimen name="size_6dp">6dp</dimen>
@@ -23,5 +23,13 @@
     <dimen name="size_12dp">12dp</dimen>
     <dimen name="size_14dp">14dp</dimen>
     <dimen name="size_16dp">16dp</dimen>
+    <dimen name="size_18dp">18dp</dimen>
+    <dimen name="size_20dp">20dp</dimen>
+    <dimen name="size_22dp">22dp</dimen>
+    <dimen name="size_24dp">24dp</dimen>
+    <dimen name="size_26dp">26dp</dimen>
     <dimen name="size_250dp">250dp</dimen>
+    <dimen name="size_300dp">300dp</dimen>
+    <dimen name="size_350dp">350dp</dimen>
+    <dimen name="size_400dp">400dp</dimen>
 </resources>
