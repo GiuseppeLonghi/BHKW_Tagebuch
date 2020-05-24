@@ -1,9 +1,9 @@
 package com.example.android.bhkwTagebuch.activity;
 
-import android.support.v7.app.ActionBar;
-import android.support.v7.app.AppCompatActivity;
+import androidx.appcompat.app.ActionBar;
+import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
-import android.support.v7.widget.Toolbar;
+import androidx.appcompat.widget.Toolbar;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -69,6 +69,7 @@ public class DetailsActivity extends AppCompatActivity {
                     kwhMeasurementValue = Double.parseDouble(kwhMeasurementEditText.getText().toString());
 
                     Toast.makeText(getApplicationContext(), confirmButton.getText() + " button pressed: " + kwhMeasurementValue, Toast.LENGTH_SHORT).show();
+
                 }
                 else {
                     Toast.makeText(getApplicationContext(), "Insert kWh before to confirm", Toast.LENGTH_LONG).show();

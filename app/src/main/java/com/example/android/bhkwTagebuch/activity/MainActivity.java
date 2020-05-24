@@ -1,26 +1,30 @@
 package com.example.android.bhkwTagebuch.activity;
 
-import android.support.annotation.NonNull;
-import android.support.design.widget.NavigationView;
-import android.support.v4.app.Fragment;
-import android.support.v4.view.GravityCompat;
-import android.support.v4.widget.DrawerLayout;
-import android.support.v7.app.ActionBar;
-import android.support.v7.app.AppCompatActivity;
+import androidx.annotation.NonNull;
+import com.google.android.material.navigation.NavigationView;
+import androidx.fragment.app.Fragment;
+import androidx.core.view.GravityCompat;
+import androidx.drawerlayout.widget.DrawerLayout;
+import androidx.appcompat.app.ActionBar;
+import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
-import android.support.v7.widget.Toolbar;
+import androidx.appcompat.widget.Toolbar;
+
+import android.util.Log;
 import android.view.MenuItem;
 
-/*import com.example.android.bhkwTagebuch.fragment.EventsFragment;
-import com.example.android.bhkwTagebuch.fragment.HotelsFragment;
-import com.example.android.bhkwTagebuch.fragment.MonumentsFragment;
-import com.example.android.bhkwTagebuch.fragment.RestaurantsFragment;*/
 import com.example.android.bhkwTagebuch.R;
 import com.example.android.bhkwTagebuch.fragment.HauseStromzahlerFragment;
 import com.example.android.bhkwTagebuch.fragment.StromzahlerFragment;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
 
 public class MainActivity extends AppCompatActivity {
 
+    private static final String TAG = "MainActivity";
     private DrawerLayout mDrawerLayout;
 
     // tags used to attach the fragments
@@ -136,6 +140,8 @@ public class MainActivity extends AppCompatActivity {
 
             invalidateOptionsMenu();
         }
+
+        basicReadWrite();
     }
 
     /**
@@ -173,5 +179,38 @@ public class MainActivity extends AppCompatActivity {
                 return true;
         }
         return super.onOptionsItemSelected(item);
+    }
+
+    /**
+     * Basic method used to retrieve an instance of your database using getInstance()
+     * and reference the location you want to write to
+     */
+    public void basicReadWrite() {
+        // [START write_message]
+        // Write a message to the database
+        FirebaseDatabase database = FirebaseDatabase.getInstance();
+        DatabaseReference dataBaseRef = database.getReference("message");
+
+        dataBaseRef.setValue("Hello, World!");
+        // [END write_message]
+
+        // [START read_message]
+        // Read from the database
+        dataBaseRef.addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(DataSnapshot dataSnapshot) {
+                // This method is called once with the initial value and again
+                // whenever data at this location is updated.
+                String value = dataSnapshot.getValue(String.class);
+                Log.d(TAG, "Value is: " + value);
+            }
+
+            @Override
+            public void onCancelled(DatabaseError error) {
+                // Failed to read value
+                Log.w(TAG, "Failed to read value.", error.toException());
+            }
+        });
+        // [END read_message]
     }
 }

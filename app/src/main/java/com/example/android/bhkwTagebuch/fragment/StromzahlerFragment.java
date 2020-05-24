@@ -2,8 +2,8 @@ package com.example.android.bhkwTagebuch.fragment;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.annotation.NonNull;
-import android.support.v4.app.Fragment;
+import androidx.annotation.NonNull;
+import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -11,7 +11,6 @@ import android.widget.AdapterView;
 import android.widget.ListView;
 
 import com.example.android.bhkwTagebuch.R;
-import com.example.android.bhkwTagebuch.activity.DetailsActivity;
 import com.example.android.bhkwTagebuch.activity.DetailsStromzahlerActivity;
 import com.example.android.bhkwTagebuch.util.Item;
 import com.example.android.bhkwTagebuch.util.ItemAdapter;
