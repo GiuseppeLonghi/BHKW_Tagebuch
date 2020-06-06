@@ -1,75 +1,66 @@
 <resources>
     <string name="app_name">BHKW Tagebuch</string>
-    <string name="houseElectricityMeters">House Stromzähler</string>
-    <string name="electricityMeter">Stromzähler</string>
+    <string name="housesElectricityMeters">Houses Electricity Meters</string>
+    <string name="electricityMeter">Electricity Meter</string>
     <string name="electricityMeterNumber">1093123</string>
     <string name="reference">1.8.0</string>
     <string name="delivery">2.8.0</string>
     <string name="bhkw">BHKW</string>
-    <string name="waterMeter">Wassergesamt </string>
-    <string name="gasMeter">Zähler Gasgesamt </string>
-    <string name="softner">Nachspeiseeinrichtung</string>
+    <string name="waterMeter">Water Meter</string>
+    <string name="gasMeter">Gas Meter</string>
+    <string name="softner">Softner</string>
     <string name="description">Description</string>
     <string name="kWh">Insert kWh</string>
 
     <!-- Toolbar titles when navigation menu item is selected -->
     <string-array name="toolbar_titles">
-        <item>House Stromzähler</item>
-        <item>Stromzähler</item>
+        <item>Houses Current Meters</item>
+        <item>Current Meter</item>
         <item>BHKW</item>
-        <item>Wassergesamt</item>
-        <item>Zähler Gasgesamt</item>
-        <item>Nachspeiseeinrichtung</item>
+        <item>Water Meter</item>
+        <item>Gas Meter</item>
+        <item>Softner</item>
     </string-array>
 
-    <!-- House Stromzahler -->
+    <!-- Houses Current Meters details -->
     <string name="number">Number</string>
     <string name="year">Year</string>
     <string name="month">Month</string>
     <string name="day">Day</string>
-    <string name="house1">Haus Nr. 1 -\n 1077910</string>
-    <string name="house3">Haus Nr. 3 -\n 1077916</string>
-    <string name="house5">Haus Nr. 5 -\n 1077900</string>
-    <string name="house7">Haus Nr. 7 -\n 1077914</string>
-    <string name="generalCurrent">Allegemein -\n strom \n 1077915</string>
+    <string name="house1">House Nr. 1 -\n 1077910</string>
+    <string name="house3">House Nr. 3 -\n 1077916</string>
+    <string name="house5">House Nr. 5 -\n 1077900</string>
+    <string name="house7">House Nr. 7 -\n 1077914</string>
+    <string name="generalCurrent">General -\n Current \n 1077915</string>
 
 
     <!-- Houses details -->
     <string name="Category_electricity_meters">Hotels</string>
 
-    <string name="House1">Haus Nr. 1</string>
+    <string name="House1">House Nr. 1</string>
     <string name="House1ElectricityCounterNumber">1077910</string>
     <string name="House1Address">Gyönker Strasse 1</string>
 
-    <string name="House2">Haus Nr. 3</string>
+    <string name="House2">House Nr. 3</string>
     <string name="House2ElectricityCounterNumber">1077916</string>
     <string name="House2Address">Gyönker Strasse 3</string>
 
-    <string name="House3">Haus Nr. 5</string>
+    <string name="House3">House Nr. 5</string>
     <string name="House3ElectricityCounterNumber">1077900</string>
     <string name="House3Address">Gyönker Strasse 5</string>
 
-    <string name="House4">Haus Nr. 7</string>
+    <string name="House4">House Nr. 7</string>
     <string name="House4ElectricityCounterNumber">1077914</string>
     <string name="House4Address">Gyönker Strasse 7</string>
 
-    <string name="General">Allgemeinstrom</string>
+    <string name="General">General Electricity Counter</string>
     <string name="GeneralElectricityCounterNumber">1077915</string>
     <string name="GeneralAddress">Gyönker Strasse 1 – 7</string>
 
-    <string name="Electricity_meter">Stromzähler</string>
+    <string name="Electricity_meter">Electricity Meter</string>
     <string name="ElectricityMeterCounterNumber">1093123</string>
     <string name="ElectricityMeterAddress">Gyönker Strasse 1 – 7</string>
     <!-- ======================================================================================= -->
-
-    <!-- Descriptions Section -->
-    <string name="Hotel_description">Hotel Albani Roma is an 8-minute walk from Villa Borghese Art Gallery and Gardens. It offers free parking, spacious air-conditioned rooms with LCD satellite TV and free Wi-Fi. Busses to Termini Train Station and Rome\'s historic center stop 250 m from the hotel, while a tram stop with direct links to Rome\'s main sights is just opposite the property. The MACRO Art Museum is a 10-minute walk away. All bright rooms at Albani Roma include a private bathroom with hairdryer, toiletry set and slippers. Some rooms offer a balcony. Breakfast is buffet style, and includes croissants, cold meats and cheeses. The La Villa restaurant features an original chandelier, and serves traditional cuisine. Nomentano is a great choice for travelers interested in ancient landmarks, old-town exploration and art. Couples in particular like the location – they rated it 8.1 for a two-person trip. We speak your language!</string>
-
-    <!-- Restaurants Section -->
-    <string name="Restaurant_description">Back from the beach, a bike ride in our beautiful surroundings or shopping, you will certainly appreciate the relaxing at the table enjoying good wine and good food. The imagination of our chefs will never bore you by proposing always different and tasty dishes. The care and choice of local and genuine ingredients will delight you. The accurate service, the elegance of our rooms will make you feel at ease. The availability and friendliness of the staff will pamper you. You will always have a wide choice of vegetables on our buffet to season with the renowned oil of our land. You can always choose between a dish of land, sea or one of our third tasty dishes, a soup or a cold dish. As a last course you will always have the choice between seasonal fruit, a fruit salad of fresh fruit, an ice cream or one of the desserts prepared by our pastry chef.</string>
-
-    <!-- Monuments Section -->
-    <string name="Monument_description">The Flavian Amphitheatre, better known to the world as the Colosseum, is the most universally recognized icon in Rome. You can explore this popular tourist attraction on your own or take a guided tour for more information and the opportunity to ask questions as you go along. Despite damage by fire, earthquake, and neglect, as well as its conversion into a fortress of the Frangipani family, the pillaging of its stone for construction of palaces, and the constant pollution of modern traffic around it, the Colosseum still creates a powerful impression of its original form. The largest structure surviving from ancient Rome, the Colosseum was begun by Vespasian in AD 72 and eight years later enlarged by his son, Titus, adding the fourth story. The name of the Colosseum derived from the immense statue of Nero - called the colossus after the Colossus of Rhodes - that stood nearby; the entire area was originally within Nero\'s Domus Aurea, his palace complex in the center of ancient Rome.</string>
 
     <!-- Events Section -->
     <string name="Event_description">In the heart of Rome, in the Prati district just footsteps from Piazza Cavour, get ready to sip cocktails and dance the night away in a beautiful lounge area with a bar and dance floor. Glamorous people, elegant vibe and contemporary music await you for a night that you won’t forget.</string>

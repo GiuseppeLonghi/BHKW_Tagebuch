@@ -18,7 +18,7 @@ public class DetailsStromzahlerActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_stromzahler_details);
+        setContentView(R.layout.activity_current_meter_details);
 
         Toolbar toolbar = findViewById(R.id.toolbar_stromzahler_details_activity);
         setSupportActionBar(toolbar);

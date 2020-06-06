@@ -17,10 +17,10 @@ import com.example.android.bhkwTagebuch.util.ItemAdapter;
 
 import java.util.ArrayList;
 
-public class StromzahlerFragment extends Fragment {
+public class CurrentCounterFragment extends Fragment {
  /* Default Constructor */
 
-    public StromzahlerFragment() {
+    public CurrentCounterFragment() {
         // Required empty public constructor
     }
 

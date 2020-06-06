@@ -16,7 +16,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.example.android.bhkwTagebuch.activity.DetailsActivity"
+            android:name="com.example.android.bhkwTagebuch.activity.HousesCurrentMetersActivity"
             android:parentActivityName="com.example.android.bhkwTagebuch.activity.MainActivity">
         </activity>
         <activity

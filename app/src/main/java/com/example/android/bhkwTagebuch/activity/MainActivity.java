@@ -14,8 +14,8 @@ import android.util.Log;
 import android.view.MenuItem;
 
 import com.example.android.bhkwTagebuch.R;
-import com.example.android.bhkwTagebuch.fragment.HauseStromzahlerFragment;
-import com.example.android.bhkwTagebuch.fragment.StromzahlerFragment;
+import com.example.android.bhkwTagebuch.fragment.HousesCurrentCounterFragment;
+import com.example.android.bhkwTagebuch.fragment.CurrentCounterFragment;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
@@ -28,13 +28,13 @@ public class MainActivity extends AppCompatActivity {
     private DrawerLayout mDrawerLayout;
 
     // tags used to attach the fragments
-    private static final String TAG_HOUSE_STROMZAHLER = "Hause Stromzähler";
-    private static final String TAG_STROMZAHLER = "Stromzähler";
+    private static final String TAG_HOUSES_CURRENT_COUNTERS = "Houses Current Counters";
+    private static final String TAG_CURRENT_COUNTER = "Current Counter";
     private static final String TAG_BHKW = "BHKW";
-    private static final String TAG_WASSERZAHLER = "Wasserzähler";
+    private static final String TAG_WATER_COUNTER = "Water Counters";
     private static final String TAG_GASZAHLER = "Gaszähler";
     private static final String TAG_NACHSPEISEEINRICHTUNG = "Nachspeiseeinrichtung";
-    public static String CURRENT_TAG = TAG_HOUSE_STROMZAHLER;
+    public static String CURRENT_TAG = TAG_HOUSES_CURRENT_COUNTERS;
 
     // index to identify current nav menu item
     public static int mNavItemIndex = 0;
@@ -73,11 +73,11 @@ public class MainActivity extends AppCompatActivity {
                         switch (menuItem.getItemId()) {
                             case R.id.nav_house_electricity_meter:
                                 mNavItemIndex = 0;
-                                CURRENT_TAG = TAG_HOUSE_STROMZAHLER;
+                                CURRENT_TAG = TAG_HOUSES_CURRENT_COUNTERS;
                                 break;
                             case R.id.nav_electricity_meter:
                                 mNavItemIndex = 1;
-                                CURRENT_TAG = TAG_STROMZAHLER;
+                                CURRENT_TAG = TAG_CURRENT_COUNTER;
                                 break;
                             case R.id.nav_bhkw:
                                 mNavItemIndex = 2;
@@ -85,7 +85,7 @@ public class MainActivity extends AppCompatActivity {
                                 break;
                             case R.id.nav_water_meter:
                                 mNavItemIndex = 3;
-                                CURRENT_TAG = TAG_WASSERZAHLER;
+                                CURRENT_TAG = TAG_WATER_COUNTER;
                                 break;
                             case R.id.nav_gas_meter:
                                 mNavItemIndex = 4;
@@ -123,7 +123,7 @@ public class MainActivity extends AppCompatActivity {
 
         if (savedInstanceState == null) {
             mNavItemIndex = 0;
-            CURRENT_TAG = TAG_HOUSE_STROMZAHLER;
+            CURRENT_TAG = TAG_HOUSES_CURRENT_COUNTERS;
 
             // Selecting appropriate nav menu item
             navigationView.getMenu().getItem(mNavItemIndex).setChecked(true);
@@ -151,11 +151,11 @@ public class MainActivity extends AppCompatActivity {
     private Fragment getFragment() {
         switch (mNavItemIndex) {
             case 0:
-                // HauseStromzahler fragment
-                return new HauseStromzahlerFragment();
+                // Houses Current Counter fragment
+                return new HousesCurrentCounterFragment();
             case 1:
                 // Stromzahler fragment
-                return new StromzahlerFragment();
+                return new CurrentCounterFragment();
             /*case 2:
                 // monuments fragment
                 return new MonumentsFragment();
@@ -163,7 +163,7 @@ public class MainActivity extends AppCompatActivity {
                 // events fragment
                 return new EventsFragment();*/
             default:
-                return new HauseStromzahlerFragment();
+                return new HousesCurrentCounterFragment();
         }
     }
 

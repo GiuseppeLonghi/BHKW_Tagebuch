@@ -13,12 +13,12 @@ import android.widget.Toast;
 
 import com.example.android.bhkwTagebuch.R;
 
-public class DetailsActivity extends AppCompatActivity {
+public class HousesCurrentMetersActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_details);
+        setContentView(R.layout.activity_houses_current_meters);
 
         Toolbar toolbar = findViewById(R.id.toolbar_details_activity);
         setSupportActionBar(toolbar);

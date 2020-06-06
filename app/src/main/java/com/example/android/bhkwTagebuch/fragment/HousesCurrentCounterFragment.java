@@ -11,16 +11,16 @@ import android.widget.AdapterView;
 import android.widget.ListView;
 
 import com.example.android.bhkwTagebuch.R;
-import com.example.android.bhkwTagebuch.activity.DetailsActivity;
+import com.example.android.bhkwTagebuch.activity.HousesCurrentMetersActivity;
 import com.example.android.bhkwTagebuch.util.Item;
 import com.example.android.bhkwTagebuch.util.ItemAdapter;
 
 import java.util.ArrayList;
 
-public class HauseStromzahlerFragment extends Fragment {
+public class HousesCurrentCounterFragment extends Fragment {
  /* Default Constructor */
 
-    public HauseStromzahlerFragment() {
+    public HousesCurrentCounterFragment() {
         // Required empty public constructor
     }
 
@@ -70,7 +70,7 @@ public class HauseStromzahlerFragment extends Fragment {
                 Item item = items.get(position);
 
                 // Create a new intent to open the {@link NumbersActivity}
-                Intent intent = new Intent(getActivity(), DetailsActivity.class);
+                Intent intent = new Intent(getActivity(), HousesCurrentMetersActivity.class);
                 intent.putExtra("houseNumber", item.getHouseNumber());
                 intent.putExtra("image", item.getImageResourceId());
                 intent.putExtra("location", item.getAddress());

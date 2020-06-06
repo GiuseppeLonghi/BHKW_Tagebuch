@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.android.bhkwTagebuch.activity.DetailsActivity">
+    tools:context="com.example.android.bhkwTagebuch.activity.HousesCurrentMetersActivity">
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -22,13 +22,14 @@
             android:layout_width="368dp"
             android:layout_height="319dp"
             android:layout_below="@+id/toolbar_details_activity"
+            android:layout_centerHorizontal="true"
             android:layout_marginStart="@dimen/size_26dp"
             android:layout_marginLeft="@dimen/size_26dp"
             android:layout_marginTop="@dimen/size_26dp"
             android:layout_marginEnd="@dimen/size_26dp"
             android:layout_marginRight="@dimen/size_26dp"
             android:layout_marginBottom="@dimen/size_26dp"
-            android:scaleType="fitCenter"
+            android:scaleType="center"
             android:src="@drawable/house1_electricity_meter" />
 
         <TextView
@@ -99,10 +100,10 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@+id/kwhEditText"
-            android:orientation="horizontal"
-            android:layout_marginTop="@dimen/size_26dp"
             android:layout_marginLeft="@dimen/size_10dp"
-            android:layout_marginRight="@dimen/size_10dp">
+            android:layout_marginTop="@dimen/size_72dp"
+            android:layout_marginRight="@dimen/size_10dp"
+            android:orientation="horizontal">
 
             <Button
                 android:id="@+id/cancelButton"
