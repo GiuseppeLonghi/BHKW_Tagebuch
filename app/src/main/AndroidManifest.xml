@@ -3,6 +3,7 @@
     package="com.example.android.bhkwTagebuch">
 
     <application
+        android:allowBackup="false"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
@@ -16,11 +17,19 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.example.android.bhkwTagebuch.activity.HousesCurrentMetersActivity"
+            android:name="com.example.android.bhkwTagebuch.activity.DetailsHousesCurrentMetersActivity"
             android:parentActivityName="com.example.android.bhkwTagebuch.activity.MainActivity">
         </activity>
         <activity
-            android:name="com.example.android.bhkwTagebuch.activity.DetailsStromzahlerActivity"
+            android:name="com.example.android.bhkwTagebuch.activity.DetailsGeneralCurrentMeterActivity"
+            android:parentActivityName="com.example.android.bhkwTagebuch.activity.MainActivity">
+        </activity>
+        <activity
+            android:name="com.example.android.bhkwTagebuch.activity.DetailsBHKWActivity"
+            android:parentActivityName="com.example.android.bhkwTagebuch.activity.MainActivity">
+        </activity>
+        <activity
+            android:name="com.example.android.bhkwTagebuch.activity.DetailsWaterMeterActivity"
             android:parentActivityName="com.example.android.bhkwTagebuch.activity.MainActivity">
         </activity>
     </application>

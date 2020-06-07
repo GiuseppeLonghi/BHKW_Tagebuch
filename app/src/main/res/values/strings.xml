@@ -5,8 +5,7 @@
     <string name="electricityMeterNumber">1093123</string>
     <string name="reference">1.8.0</string>
     <string name="delivery">2.8.0</string>
-    <string name="bhkw">BHKW</string>
-    <string name="waterMeter">Water Meter</string>
+
     <string name="gasMeter">Gas Meter</string>
     <string name="softner">Softner</string>
     <string name="description">Description</string>
@@ -33,12 +32,17 @@
     <string name="house7">House Nr. 7 -\n 1077914</string>
     <string name="generalCurrent">General -\n Current \n 1077915</string>
 
-    <string name="TODO">TODO</string>
 
+    <!-- BHKW details -->
+    <string name="bhkw">BHKW</string>
+    <string name="BHKWNumber">7E3684000010</string>
+
+    <!-- BHKW details -->
+    <string name="waterMeter">Water Meter</string>
+    <string name="waterMeterNumber">661779</string>
+    <string name="technicalCentralAddress">Gyönker Strasse 1 - 7</string>
 
     <!-- Houses details -->
-    <string name="Category_electricity_meters">Hotels</string>
-
     <string name="House1">House Nr. 1</string>
     <string name="House1ElectricityCounterNumber">1077910</string>
     <string name="House1Address">Gyönker Strasse 1</string>
@@ -57,17 +61,14 @@
 
     <string name="General">General Counter</string>
     <string name="GeneralElectricityCounterNumber">1077915</string>
-    <string name="GeneralAddress">Gyönker Strasse 1 – 7</string>
 
     <string name="Electricity_meter">Electricity Meter</string>
     <string name="ElectricityMeterCounterNumber">1093123</string>
-    <string name="ElectricityMeterAddress">Gyönker Strasse 1 – 7</string>
     <!-- ======================================================================================= -->
 
-    <!-- Events Section -->
-    <string name="Event_description">In the heart of Rome, in the Prati district just footsteps from Piazza Cavour, get ready to sip cocktails and dance the night away in a beautiful lounge area with a bar and dance floor. Glamorous people, elegant vibe and contemporary music await you for a night that you won’t forget.</string>
+    <!-- General Section -->
     <string name="cancel">Cancel</string>
     <string name="confirm">Confirm</string>
-    <string name="todo">TODO</string>
+    <string name="TODO">TODO</string>
 
 </resources>

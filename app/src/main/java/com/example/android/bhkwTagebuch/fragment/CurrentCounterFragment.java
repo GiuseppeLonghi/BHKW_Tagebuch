@@ -11,7 +11,7 @@ import android.widget.AdapterView;
 import android.widget.ListView;
 
 import com.example.android.bhkwTagebuch.R;
-import com.example.android.bhkwTagebuch.activity.DetailsStromzahlerActivity;
+import com.example.android.bhkwTagebuch.activity.DetailsGeneralCurrentMeterActivity;
 import com.example.android.bhkwTagebuch.util.Item;
 import com.example.android.bhkwTagebuch.util.ItemAdapter;
 
@@ -35,7 +35,7 @@ public class CurrentCounterFragment extends Fragment {
 
         items.add(new Item(getResources().getString(R.string.electricityMeter),
                 getResources().getString(R.string.electricityMeterNumber),
-                getResources().getString(R.string.GeneralAddress),
+                getResources().getString(R.string.technicalCentralAddress),
                 R.drawable.electricity_meter));
 
         ItemAdapter adapter = new ItemAdapter(getActivity(), items);
@@ -54,7 +54,7 @@ public class CurrentCounterFragment extends Fragment {
                 Item item = items.get(position);
 
                 // Create a new intent to open the {@link NumbersActivity}
-                Intent intent = new Intent(getActivity(), DetailsStromzahlerActivity.class);
+                Intent intent = new Intent(getActivity(), DetailsGeneralCurrentMeterActivity.class);
                 intent.putExtra("houseNumber", item.getHouseNumber());
                 intent.putExtra("image", item.getImageResourceId());
                 intent.putExtra("location", item.getAddress());

@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fillViewport="true"
-    tools:context="com.example.android.bhkwTagebuch.activity.DetailsHousesCurrentMetersActivity">
+    tools:context="com.example.android.bhkwTagebuch.activity.DetailsWaterMeterActivity">
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -19,9 +19,9 @@
             android:theme="@style/ThemeOverlay.AppCompat.ActionBar"/>
 
         <ImageView
-            android:id="@+id/bhkw_image_details"
-            android:layout_width="294dp"
-            android:layout_height="wrap_content"
+            android:id="@+id/image_details"
+            android:layout_width="268dp"
+            android:layout_height="202dp"
             android:layout_below="@+id/toolbar_details_activity"
             android:layout_centerHorizontal="true"
             android:layout_marginStart="@dimen/size_26dp"
@@ -30,38 +30,38 @@
             android:layout_marginEnd="@dimen/size_26dp"
             android:layout_marginRight="@dimen/size_26dp"
             android:layout_marginBottom="@dimen/size_26dp"
+            android:contentDescription="@string/TODO"
             android:scaleType="centerInside"
-            android:src="@drawable/house1_electricity_meter"
-            android:contentDescription="@string/TODO" />
+            android:src="@drawable/water_meter" />
 
         <TextView
-            android:id="@+id/house_number_details"
+            android:id="@+id/waterMeter_name_details"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@id/bhkw_image_details"
+            android:layout_below="@id/image_details"
             android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
             android:textStyle="bold"
             android:layout_margin="@dimen/size_1dp"
             android:layout_centerInParent="true"
-            tools:text="@string/House1" />
+            tools:text="@string/waterMeter" />
 
         <TextView
-            android:id="@+id/counter_number_detail"
+            android:id="@+id/water_number_detail"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@id/house_number_details"
+            android:layout_below="@id/waterMeter_name_details"
             android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
             android:textStyle="bold"
             android:layout_margin="@dimen/size_1dp"
             android:layout_centerInParent="true"
-            tools:text="@string/House1ElectricityCounterNumber" />
+            tools:text="@string/waterMeterNumber" />
 
         <View
             android:id="@+id/separator"
             android:layout_width="match_parent"
             android:layout_height="1dp"
             android:background="@color/colorPrimaryDark"
-            android:layout_below="@id/counter_number_detail"/>
+            android:layout_below="@id/water_number_detail"/>
 
         <LinearLayout
             android:id="@+id/horizontal_linear_layout"
@@ -84,7 +84,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="@dimen/size_10dp"
-                tools:text="address"
+                tools:text="@string/technicalCentralAddress"
                 android:layout_marginStart="@dimen/size_10dp" />
         </LinearLayout>
 

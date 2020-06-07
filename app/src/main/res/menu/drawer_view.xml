@@ -11,7 +11,7 @@
             android:title="@string/electricityMeter" />
         <item
             android:id="@+id/nav_bhkw"
-            android:icon="@drawable/bhkw_9"
+            android:icon="@drawable/bhkw"
             android:title="@string/bhkw" />
         <item
             android:id="@+id/nav_water_meter"

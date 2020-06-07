@@ -1,9 +1,6 @@
 package com.example.android.bhkwTagebuch.activity;
 
 import android.os.Bundle;
-import androidx.appcompat.app.ActionBar;
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.appcompat.widget.Toolbar;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -13,14 +10,18 @@ import android.widget.Toast;
 
 import com.example.android.bhkwTagebuch.R;
 
-public class DetailsStromzahlerActivity extends AppCompatActivity {
+import androidx.appcompat.app.ActionBar;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
+
+public class DetailsWaterMeterActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_current_meter_details);
+        setContentView(R.layout.activity_water_meter);
 
-        Toolbar toolbar = findViewById(R.id.toolbar_stromzahler_details_activity);
+        Toolbar toolbar = findViewById(R.id.toolbar_details_activity);
         setSupportActionBar(toolbar);
 
         ActionBar actionbar = getSupportActionBar();
@@ -31,36 +32,32 @@ public class DetailsStromzahlerActivity extends AppCompatActivity {
         }
 
         // Setting the Item image
-        ImageView imageItem = findViewById(R.id.image_stromzahler_details);
+        ImageView imageItem = findViewById(R.id.image_details);
         imageItem.setImageResource(getIntent().getExtras().getInt("image"));
 
         // Setting the Item House Number details
-        TextView houseNumberItem = findViewById(R.id.house_number_stromzahler_details);
-        houseNumberItem.setText(getIntent().getExtras().getString("houseNumber"));
+        TextView houseNumberItem = findViewById(R.id.waterMeter_name_details);
+        houseNumberItem.setText(getIntent().getExtras().getString("waterMeterName"));
 
         // Setting the Item Counter Number details
-        TextView counterNumberItem = findViewById(R.id.counter_number_stromzahler_detail);
-        counterNumberItem.setText(getIntent().getExtras().getString("counterNumber"));
+        TextView counterNumberItem = findViewById(R.id.water_number_detail);
+        counterNumberItem.setText(getIntent().getExtras().getString("waterMeterNumber"));
 
-        TextView addressItem = findViewById(R.id.location_stromzahler_textView);
+        TextView addressItem = findViewById(R.id.location_textView);
         addressItem.setText(getIntent().getExtras().getString("location"));
 
-
-
-        final Button cancelButton = findViewById(R.id.stromzahler_cancelButton);
+        final Button cancelButton = findViewById(R.id.cancelButton);
         cancelButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Toast.makeText(getApplicationContext(), cancelButton.getText() + " button pressed", Toast.LENGTH_SHORT).show();
 
-                EditText kwhMeasurementReferenceEditText = findViewById(R.id.referenceEditText);
-                EditText kwhMeasurementDeliveryEditText = findViewById(R.id.deliveryEditText);
-                kwhMeasurementReferenceEditText.getText().clear();
-                kwhMeasurementDeliveryEditText.getText().clear();
+                EditText kwhMeasurementEditText = findViewById(R.id.kwhEditText);
+                kwhMeasurementEditText.getText().clear();
             }
         });
 
-        final Button confirmButton = findViewById(R.id.stromzahler_confirmButton);
+        final Button confirmButton = findViewById(R.id.confirmButton);
         confirmButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -73,6 +70,7 @@ public class DetailsStromzahlerActivity extends AppCompatActivity {
                     kwhMeasurementValue = Double.parseDouble(kwhMeasurementEditText.getText().toString());
 
                     Toast.makeText(getApplicationContext(), confirmButton.getText() + " button pressed: " + kwhMeasurementValue, Toast.LENGTH_SHORT).show();
+
                 }
                 else {
                     Toast.makeText(getApplicationContext(), "Insert kWh before to confirm", Toast.LENGTH_LONG).show();

@@ -13,7 +13,7 @@ import android.widget.Toast;
 
 import com.example.android.bhkwTagebuch.R;
 
-public class HousesCurrentMetersActivity extends AppCompatActivity {
+public class DetailsHousesCurrentMetersActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,7 +31,7 @@ public class HousesCurrentMetersActivity extends AppCompatActivity {
         }
 
         // Setting the Item image
-        ImageView imageItem = findViewById(R.id.image_details);
+        ImageView imageItem = findViewById(R.id.bhkw_image_details);
         imageItem.setImageResource(getIntent().getExtras().getInt("image"));
 
         // Setting the Item House Number details

@@ -1,6 +1,9 @@
 package com.example.android.bhkwTagebuch.activity;
 
 import androidx.annotation.NonNull;
+
+import com.example.android.bhkwTagebuch.fragment.BHKWFragment;
+import com.example.android.bhkwTagebuch.fragment.WaterMeterFragment;
 import com.google.android.material.navigation.NavigationView;
 import androidx.fragment.app.Fragment;
 import androidx.core.view.GravityCompat;
@@ -154,14 +157,14 @@ public class MainActivity extends AppCompatActivity {
                 // Houses Current Counter fragment
                 return new HousesCurrentCounterFragment();
             case 1:
-                // Stromzahler fragment
+                // General Current fragment
                 return new CurrentCounterFragment();
-            /*case 2:
-                // monuments fragment
-                return new MonumentsFragment();
+            case 2:
+                // BHKW fragment
+                return new BHKWFragment();
             case 3:
-                // events fragment
-                return new EventsFragment();*/
+                // Water Meter fragment
+                return new WaterMeterFragment();
             default:
                 return new HousesCurrentCounterFragment();
         }

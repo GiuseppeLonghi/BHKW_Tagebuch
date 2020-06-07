@@ -5,14 +5,14 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fillViewport="true"
-    tools:context="com.example.android.bhkwTagebuch.activity.DetailsHousesCurrentMetersActivity">
+    tools:context="com.example.android.bhkwTagebuch.activity.DetailsBHKWActivity">
 
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
         <androidx.appcompat.widget.Toolbar
-            android:id="@+id/toolbar_details_activity"
+            android:id="@+id/toolbar_details_bhkw_activity"
             android:layout_width="match_parent"
             android:layout_height="?attr/actionBarSize"
             android:background="?attr/colorPrimary"
@@ -20,9 +20,9 @@
 
         <ImageView
             android:id="@+id/bhkw_image_details"
-            android:layout_width="294dp"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/toolbar_details_activity"
+            android:layout_width="284dp"
+            android:layout_height="190dp"
+            android:layout_below="@+id/toolbar_details_bhkw_activity"
             android:layout_centerHorizontal="true"
             android:layout_marginStart="@dimen/size_26dp"
             android:layout_marginLeft="@dimen/size_26dp"
@@ -30,12 +30,12 @@
             android:layout_marginEnd="@dimen/size_26dp"
             android:layout_marginRight="@dimen/size_26dp"
             android:layout_marginBottom="@dimen/size_26dp"
+            android:contentDescription="@string/TODO"
             android:scaleType="centerInside"
-            android:src="@drawable/house1_electricity_meter"
-            android:contentDescription="@string/TODO" />
+            android:src="@drawable/bhkw" />
 
         <TextView
-            android:id="@+id/house_number_details"
+            android:id="@+id/bhkw_name_details"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@id/bhkw_image_details"
@@ -43,28 +43,28 @@
             android:textStyle="bold"
             android:layout_margin="@dimen/size_1dp"
             android:layout_centerInParent="true"
-            tools:text="@string/House1" />
+            tools:text="@string/bhkw" />
 
         <TextView
-            android:id="@+id/counter_number_detail"
+            android:id="@+id/bhkw_number_detail"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@id/house_number_details"
+            android:layout_below="@id/bhkw_name_details"
             android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
             android:textStyle="bold"
             android:layout_margin="@dimen/size_1dp"
             android:layout_centerInParent="true"
-            tools:text="@string/House1ElectricityCounterNumber" />
+            tools:text="@string/BHKWNumber" />
 
         <View
             android:id="@+id/separator"
             android:layout_width="match_parent"
             android:layout_height="1dp"
             android:background="@color/colorPrimaryDark"
-            android:layout_below="@id/counter_number_detail"/>
+            android:layout_below="@id/bhkw_number_detail"/>
 
         <LinearLayout
-            android:id="@+id/horizontal_linear_layout"
+            android:id="@+id/bhkw_horizontal_linear_layout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@id/separator"
@@ -73,26 +73,26 @@
             tools:ignore="UseCompoundDrawables">
 
             <ImageView
-                android:id="@+id/location_imageView"
+                android:id="@+id/bhkw_location_imageView"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:src="@drawable/ic_location_on"
                 android:contentDescription="@string/TODO" />
 
             <TextView
-                android:id="@+id/location_textView"
+                android:id="@+id/bhkw_location_textView"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="@dimen/size_10dp"
-                tools:text="address"
+                tools:text="@string/BHKWAddress"
                 android:layout_marginStart="@dimen/size_10dp" />
         </LinearLayout>
 
         <EditText
-            android:id="@+id/kwhEditText"
+            android:id="@+id/bhkw_kwhEditText"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@id/horizontal_linear_layout"
+            android:layout_below="@id/bhkw_horizontal_linear_layout"
             android:layout_marginLeft="@dimen/size_14dp"
             android:layout_marginTop="@dimen/size_10dp"
             android:ems="10"
@@ -104,7 +104,7 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="fill_parent"
-            android:layout_below="@+id/kwhEditText"
+            android:layout_below="@+id/bhkw_kwhEditText"
             android:layout_marginLeft="@dimen/size_10dp"
             android:layout_marginTop="@dimen/size_72dp"
             android:layout_marginBottom="@dimen/size_4dp"
@@ -113,7 +113,7 @@
             android:orientation="horizontal">
 
             <Button
-                android:id="@+id/cancelButton"
+                android:id="@+id/bhkw_cancelButton"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -121,7 +121,7 @@
                 tools:ignore="ButtonStyle" />
 
             <Button
-                android:id="@+id/confirmButton"
+                android:id="@+id/bhkw_confirmButton"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"

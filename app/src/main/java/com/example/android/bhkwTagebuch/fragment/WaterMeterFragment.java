@@ -2,8 +2,6 @@ package com.example.android.bhkwTagebuch.fragment;
 
 import android.content.Intent;
 import android.os.Bundle;
-import androidx.annotation.NonNull;
-import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -12,15 +10,19 @@ import android.widget.ListView;
 
 import com.example.android.bhkwTagebuch.R;
 import com.example.android.bhkwTagebuch.activity.DetailsHousesCurrentMetersActivity;
+import com.example.android.bhkwTagebuch.activity.DetailsWaterMeterActivity;
 import com.example.android.bhkwTagebuch.util.Item;
 import com.example.android.bhkwTagebuch.util.ItemAdapter;
 
 import java.util.ArrayList;
 
-public class HousesCurrentCounterFragment extends Fragment {
+import androidx.annotation.NonNull;
+import androidx.fragment.app.Fragment;
+
+public class WaterMeterFragment extends Fragment {
  /* Default Constructor */
 
-    public HousesCurrentCounterFragment() {
+    public WaterMeterFragment() {
         // Required empty public constructor
     }
 
@@ -33,26 +35,11 @@ public class HousesCurrentCounterFragment extends Fragment {
         // Create a list of Items
         final ArrayList<Item> items = new ArrayList<>();
 
-        items.add(new Item(getResources().getString(R.string.House1),
-                getResources().getString(R.string.House1ElectricityCounterNumber),
-                getResources().getString(R.string.House1Address),
-                R.drawable.house1_electricity_meter));
-        items.add(new Item(getResources().getString(R.string.House2),
-                getResources().getString(R.string.House2ElectricityCounterNumber),
-                getResources().getString(R.string.House2Address),
-                R.drawable.house2_electricity_meter));
-        items.add(new Item(getResources().getString(R.string.House3),
-                getResources().getString(R.string.House3ElectricityCounterNumber),
-                getResources().getString(R.string.House3Address),
-                R.drawable.house3_electricity_meter));
-        items.add(new Item(getResources().getString(R.string.House4),
-                getResources().getString(R.string.House4ElectricityCounterNumber),
-                getResources().getString(R.string.House4Address),
-                R.drawable.house4_electricity_meter));
-        items.add(new Item(getResources().getString(R.string.General),
-                getResources().getString(R.string.GeneralElectricityCounterNumber),
+        items.add(new Item(getResources().getString(R.string.waterMeter),
+                getResources().getString(R.string.waterMeterNumber),
                 getResources().getString(R.string.technicalCentralAddress),
-                R.drawable.general_electricity_meter));
+                R.drawable.water_meter));
+
 
         ItemAdapter adapter = new ItemAdapter(getActivity(), items);
 
@@ -70,11 +57,11 @@ public class HousesCurrentCounterFragment extends Fragment {
                 Item item = items.get(position);
 
                 // Create a new intent to open the {@link NumbersActivity}
-                Intent intent = new Intent(getActivity(), DetailsHousesCurrentMetersActivity.class);
-                intent.putExtra("houseNumber", item.getHouseNumber());
+                Intent intent = new Intent(getActivity(), DetailsWaterMeterActivity.class);
+                intent.putExtra("waterMeterName", item.getHouseNumber());
                 intent.putExtra("image", item.getImageResourceId());
                 intent.putExtra("location", item.getAddress());
-                intent.putExtra("counterNumber", item.getCounterNumber());
+                intent.putExtra("waterMeterNumber", item.getCounterNumber());
 
                 // Start the new activity
                 startActivity(intent);
