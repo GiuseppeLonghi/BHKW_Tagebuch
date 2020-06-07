@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:fillViewport="true"
     tools:context="com.example.android.bhkwTagebuch.activity.HousesCurrentMetersActivity">
 
     <RelativeLayout
@@ -19,8 +20,8 @@
 
         <ImageView
             android:id="@+id/image_details"
-            android:layout_width="368dp"
-            android:layout_height="319dp"
+            android:layout_width="294dp"
+            android:layout_height="wrap_content"
             android:layout_below="@+id/toolbar_details_activity"
             android:layout_centerHorizontal="true"
             android:layout_marginStart="@dimen/size_26dp"
@@ -29,8 +30,9 @@
             android:layout_marginEnd="@dimen/size_26dp"
             android:layout_marginRight="@dimen/size_26dp"
             android:layout_marginBottom="@dimen/size_26dp"
-            android:scaleType="center"
-            android:src="@drawable/house1_electricity_meter" />
+            android:scaleType="centerInside"
+            android:src="@drawable/house1_electricity_meter"
+            android:contentDescription="@string/TODO" />
 
         <TextView
             android:id="@+id/house_number_details"
@@ -74,7 +76,8 @@
                 android:id="@+id/location_imageView"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:src="@drawable/ic_location_on" />
+                android:src="@drawable/ic_location_on"
+                android:contentDescription="@string/TODO" />
 
             <TextView
                 android:id="@+id/location_textView"
@@ -94,15 +97,19 @@
             android:layout_marginTop="@dimen/size_10dp"
             android:ems="10"
             android:hint="@string/kWh"
-            android:inputType="numberDecimal" />
+            android:inputType="numberDecimal"
+            android:autofillHints="Insert Kwh"
+            android:layout_marginStart="@dimen/size_14dp" />
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="fill_parent"
             android:layout_below="@+id/kwhEditText"
             android:layout_marginLeft="@dimen/size_10dp"
             android:layout_marginTop="@dimen/size_72dp"
+            android:layout_marginBottom="@dimen/size_4dp"
             android:layout_marginRight="@dimen/size_10dp"
+            android:gravity="bottom"
             android:orientation="horizontal">
 
             <Button

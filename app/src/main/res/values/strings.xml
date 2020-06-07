@@ -33,6 +33,8 @@
     <string name="house7">House Nr. 7 -\n 1077914</string>
     <string name="generalCurrent">General -\n Current \n 1077915</string>
 
+    <string name="TODO">TODO</string>
+
 
     <!-- Houses details -->
     <string name="Category_electricity_meters">Hotels</string>
@@ -53,7 +55,7 @@
     <string name="House4ElectricityCounterNumber">1077914</string>
     <string name="House4Address">Gyönker Strasse 7</string>
 
-    <string name="General">General Electricity Counter</string>
+    <string name="General">General Counter</string>
     <string name="GeneralElectricityCounterNumber">1077915</string>
     <string name="GeneralAddress">Gyönker Strasse 1 – 7</string>
 
