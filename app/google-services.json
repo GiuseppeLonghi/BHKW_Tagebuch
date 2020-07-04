@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "666119835909",
+    "firebase_url": "https://bhkw-tagebuch.firebaseio.com",
+    "project_id": "bhkw-tagebuch",
+    "storage_bucket": "bhkw-tagebuch.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:666119835909:android:1a0966a59dee265a9d676c",
+        "android_client_info": {
+          "package_name": "com.example.android.bhkwTagebuch"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "666119835909-2b9qljqbmufdstj9am83g070vi49os9o.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyALss5UtIprmBpdT7bMA8Vgkbp8cX_81QM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "666119835909-2b9qljqbmufdstj9am83g070vi49os9o.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
